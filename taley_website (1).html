@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taley - Wachsen mit Geschichten</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <style>
+        body, html { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #333; background: #f9f9f9; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: #fff; color: #333; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: fixed; width: 100%; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+        .logo { font-size: 24px; font-weight: bold; color: #4CAF50; }
+        .logo img { height: 50px; margin-right: 10px; }
+        .nav-links a { text-decoration: none; color: #333; padding: 10px 15px; transition: color 0.3s; }
+        .nav-links a:hover { color: #4CAF50; }
+        .hero { background: linear-gradient(to right, #4CAF50, #8BC34A); color: white; text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 48px; margin: 20px 0; }
+        .hero p { font-size: 20px; max-width: 600px; margin: 20px auto; }
+        .cta-button { background: #FF5722; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .cta-button:hover { background: #E64A19; }
+        .features, .testimonials, .download, .updates { padding: 80px 20px; text-align: center; }
+        .features h2, .testimonials h2, .download h2, .updates h2 { font-size: 36px; color: #4CAF50; margin-bottom: 40px; }
+        .feature-item { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .feature-icon { font-size: 48px; color: #4CAF50; margin-bottom: 20px; }
+        .app-preview, .updates { background: white; }
+        .download { background: #E8F5E9; }
+        .app-button { background: #4285F4; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .app-button:hover { background: #3367D6; }
+        footer { background: #2E7D32; color: white; text-align: center; padding: 40px 20px; }
+        .testimonial { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .testimonial p { font-style: italic; }
+        .testimonial cite { display: block; font-size: 16px; color: #666; margin-top: 10px; }
+        .mockup { width: 100%; max-width: 300px; margin: 20px auto; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="taley_logo.png" alt="Taley Logo">
+                    Taley
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Eigenschaften</a>
+                    <a href="#app-preview">App-Vorschau</a>
+                    <a href="#download">Herunterladen</a>
+                    <a href="#updates">Aktualisierungen</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Wachsen mit Geschichten</h1>
+            <p>Taley erstellt personalisierte, interaktive Audiogeschichten, die sich an das Alter, die Interessen und das Lerntempo Ihres Kindes anpassen und Lernen unterhaltsam und ansprechend gestalten.</p>
+            <a href="#download" class="cta-button">Starten Sie Ihre kostenlose Testversion</a>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Warum Familien Taley lieben</h2>
+            <div class="feature-item">
+                <div class="feature-icon">🧠</div>
+                <h3>KI-gesteuertes Lernen</h3>
+                <p>Geschichten passen sich dem Alter, den Interessen und dem Lerntempo Ihres Kindes an.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🗣️</div>
+                <h3>Interaktive Gespräche</h3>
+                <p>Kinder können Fragen stellen und erhalten Echtzeit-Antworten von Charakteren.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <h3>Anpassbares Erlebnis</h3>
+                <p>Wählen Sie Charaktere, Themen und setzen Sie Lernziele.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <h3>Eltern-Dashboard</h3>
+                <p>Überwachen Sie den Fortschritt und setzen Sie Inhalteinstellungen einfach.</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Was unsere Nutzer sagen</h2>
+            <div class="testimonial">
+                <p>"Taley hat die Gutenachtgeschichten meines Kindes in ein interaktives Abenteuer verwandelt. Wir lieben, wie sich die Geschichten an seine Interessen anpassen!"</p>
+                <cite>– Julia M., Elternteil</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Meine Tochter liebt es, den Charakteren Fragen zu stellen, und die Echtzeit-Antworten begeistern sie jedes Mal aufs Neue!"</p>
+                <cite>– Mark S., Elternteil</cite>
+            </div>
+        </div>
+    </section>
+    <section class="app-preview" id="app-preview">
+        <div class="container">
+            <h2>Probieren Sie Taley jetzt aus</h2>
+            <img src="app_mockup.png" alt="Taley App Mockup" class="mockup">
+        </div>
+    </section>
+    <section class="download" id="download">
+        <div class="container">
+            <h2>Laden Sie Taley noch heute herunter</h2>
+            <p>Erleben Sie die Magie des interaktiven Geschichtenerzählens und personalisierten Lernens. Laden Sie die Taley-App jetzt herunter und starten Sie Ihre kostenlose Testversion!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.taley" class="app-button">Bei Google Play herunterladen</a>
+            <a href="https://apps.apple.com/app/idcom.taley" class="app-button">Im App Store herunterladen</a>
+        </div>
+    </section>
+    <section class="updates" id="updates">
+        <div class="container">
+            <h2>Neueste App-Updates</h2>
+            <p>Sehen Sie sich die neuesten Updates an, um Ihr Erlebnis mit Taley zu verbessern.</p>
+            <div class="feature-item">
+                <h3>Version 2.1.0</h3>
+                <p>Neue interaktive Geschichte hinzugefügt und verbesserte Spracherkennungsfunktionen.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Version 2.0.5</h3>
+                <p>Fehlerbehebungen und Leistungsverbesserungen.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Taley. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>
